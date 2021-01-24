@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generate Jadwal Mingguan</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		canvas {
+			max-width: 100%;
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<h3 class="tanggal"></h3>
+	<b>Sinta 1    <br>    Pendeta :</b>
+	<select id="pdt">
+		<option>-</option>
+		<option>Pdt. Satria, S.Th. MAP</option>
+		<option>Pdt. Yulianasari</option>
+		<option>Pdt. Letus Tarung S.Th</option>
+		<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+		<option>Pdt. Yoesiana, M.Th</option>
+	</select>
+	<br><b>Organis : </b>
+	<select id="organis">
+		<option>-</option>
+		<option>Shan Nomesal</option>
+		<option>Aldi</option>
+		<option>Winda A.S</option>
+		<option>Mikael Panjaitan</option>
+		<option>Debora Hawini</option>
+		<option>Rafael</option>
+		<option>Dandy</option>
+		<option>Glodia</option>
+		<option>Tim Band</option>
+	</select>
+</br><br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Sinta 2    <br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>-</option>
+	<option>Shan Nomesal</option>
+	<option>Aldi</option>
+	<option>Winda A.S</option>
+	<option>Mikael Panjaitan</option>
+	<option>Debora Hawini</option>
+	<option>Rafael</option>
+	<option>Dandy</option>
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Sinta 3<br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>Tim Band</option>
+</select>
+<select id="singer1"></select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Kamiar  <br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>-</option>
+	<option>Shan Nomesal</option>
+	<option>Aldi</option>
+	<option>Winda A.S</option>
+	<option>Mikael Panjaitan</option>
+	<option>Debora Hawini</option>
+	<option>Rafael</option>
+	<option>Dandy</option>
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+	<br>
+	<h3 class="tanggal"></h3>
+	<b>Sinta 1    <br>    Pendeta :</b>
+	<select id="pdt">
+		<option>-</option>
+		<option>Pdt. Satria, S.Th. MAP</option>
+		<option>Pdt. Yulianasari</option>
+		<option>Pdt. Letus Tarung S.Th</option>
+		<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+		<option>Pdt. Yoesiana, M.Th</option>
+	</select>
+	<br><b>Organis : </b>
+	<select id="organis">
+		<option>-</option>
+		<option>Shan Nomesal</option>
+		<option>Aldi</option>
+		<option>Winda A.S</option>
+		<option>Mikael Panjaitan</option>
+		<option>Debora Hawini</option>
+		<option>Rafael</option>
+		<option>Dandy</option>
+		<option>Glodia</option>
+		<option>Tim Band</option>
+	</select>
+</br><br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Sinta 2    <br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>-</option>
+	<option>Shan Nomesal</option>
+	<option>Aldi</option>
+	<option>Winda A.S</option>
+	<option>Mikael Panjaitan</option>
+	<option>Debora Hawini</option>
+	<option>Rafael</option>
+	<option>Dandy</option>
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Sinta 3<br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>Tim Band</option>
+</select>
+<select id="singer1"></select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<br><b>Kamiar  <br>    Pendeta :</b>
+<select id="pdt">
+	<option>-</option>
+	<option>Pdt. Satria, S.Th. MAP</option>
+	<option>Pdt. Yulianasari</option>
+	<option>Pdt. Letus Tarung S.Th</option>
+	<option>Pdt. Fransiska A.S Bangas, M.Th</option>
+	<option>Pdt. Yoesiana, M.Th</option>
+</select>
+<br><b>Organis : </b>
+<select id="organis">
+	<option>-</option>
+	<option>Shan Nomesal</option>
+	<option>Aldi</option>
+	<option>Winda A.S</option>
+	<option>Mikael Panjaitan</option>
+	<option>Debora Hawini</option>
+	<option>Rafael</option>
+	<option>Dandy</option>
+	<option>Tim Band</option>
+</select>
+<br><b>Singer 1 :</b>
+<select id="singer">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Singer 2 :</b>
+<select id="singer1">
+	<option>-</option>
+	<option>Agustina</option>
+	<option>Happyani</option>
+	<option>J.M.Panjaitan</option>
+	<option>Jhon Moningka</option>
+	<option>Nerylia Paulina</option>
+	<option>Nia Belina</option>
+	<option>Novita Trimurty</option>
+	<option>Novrianto Wengkau</option>
+	<option>Ribka Pallangan</option>
+	<option>Salianto</option>
+	<option>Selpiana Anita</option>
+	<option>Tonun I. Panjaitan</option>
+</select>
+<br><b>Operator LCD :</b>
+<select id="op">
+	<option>-</option>
+	<option>Agat</option>
+	<option>Aryo</option>
+	<option>Leinoto T</option>
+	<option>Olvin</option>
+	<option>R.Tris Gipiyanto</option>
+	<option>Renaldy</option>
+	<option>Richie</option>
+	<option>TIM MULTIMEDIA</option>	
+</select>
+<br>
+<button onclick="generate()">Buat Gambar</button><br><br>
+<canvas id="image"></canvas>
+<script type="text/javascript">
+var _0x2cf7=['Desember','#singer','drawImage','Mei','Minggu','querySelectorAll','Rabu','getDate','#pdt','Februari','\x0aSinger\x20:\x20\x0a','Kamis','split','getFullYear','#singer1','font','Januari','length','784223ahmUKT','Agustus','getElementById','setDate','1672GlPyBP','naturalHeight','706WsKeTg','1Ztdmgk','height','fillStyle','./template.jpg','851cuFVkb','getDay','368CsplIY','value','Juli','fillText','Senin','Maret','getContext','193162jdAefr','1068060OpuAZP','26EscOOZ','12px\x20Arial','\x0aOrganis\x20:\x20','586kZoXhS','\x0aLCD\x20:\x20','innerHTML','src','image','Selasa','white','64249XrDFgA','.tanggal','September'];var _0x2086=function(_0x5bdc62,_0x59dbef){_0x5bdc62=_0x5bdc62-0x158;var _0x2cf7f3=_0x2cf7[_0x5bdc62];return _0x2cf7f3;};var _0x59465f=_0x2086;(function(_0x346abe,_0x3aa594){var _0x31991e=_0x2086;while(!![]){try{var _0x3756fe=parseInt(_0x31991e(0x158))+-parseInt(_0x31991e(0x178))*parseInt(_0x31991e(0x17f))+parseInt(_0x31991e(0x159))*parseInt(_0x31991e(0x15c))+parseInt(_0x31991e(0x185))*-parseInt(_0x31991e(0x183))+parseInt(_0x31991e(0x17e))*parseInt(_0x31991e(0x17c))+-parseInt(_0x31991e(0x18c))+-parseInt(_0x31991e(0x163));if(_0x3756fe===_0x3aa594)break;else _0x346abe['push'](_0x346abe['shift']());}catch(_0x666fac){_0x346abe['push'](_0x346abe['shift']());}}}(_0x2cf7,0xdde7e));var canvas=document[_0x59465f(0x17a)](_0x59465f(0x160)),ctx=canvas[_0x59465f(0x18b)]('2d'),img=new Image();function buattext(_0x79692b,_0x487199,_0xdba33d){var _0x1255f9=_0x59465f;pendeta=document[_0x1255f9(0x16b)](_0x1255f9(0x16e)),organis=document[_0x1255f9(0x16b)]('#organis'),singer=document[_0x1255f9(0x16b)](_0x1255f9(0x167)),singer1=document[_0x1255f9(0x16b)](_0x1255f9(0x174)),op=document[_0x1255f9(0x16b)]('#op');_0x79692b==0x2||_0x79692b==0x6?singerx=singer[_0x79692b][_0x1255f9(0x186)]:singerx=singer[_0x79692b][_0x1255f9(0x186)]+'\x0a'+singer1[_0x79692b]['value'];var _0x4d8ce7=pendeta[_0x79692b][_0x1255f9(0x186)]+_0x1255f9(0x15b)+organis[_0x79692b][_0x1255f9(0x186)]+_0x1255f9(0x170)+singerx+_0x1255f9(0x15d)+op[_0x79692b][_0x1255f9(0x186)],_0x1685f4=0xf,_0x19a588=_0x4d8ce7[_0x1255f9(0x172)]('\x0a');ctx[_0x1255f9(0x175)]=_0x1255f9(0x15a),ctx[_0x1255f9(0x181)]='white';for(var _0x79692b=0x0;_0x79692b<_0x19a588[_0x1255f9(0x177)];_0x79692b++)ctx[_0x1255f9(0x188)](_0x19a588[_0x79692b],_0x487199,_0xdba33d+_0x79692b*_0x1685f4);}function generatetanggal(){var _0xfeb17e=_0x59465f,_0x5955b9=[_0xfeb17e(0x176),_0xfeb17e(0x16f),_0xfeb17e(0x18a),'April',_0xfeb17e(0x169),'Juni',_0xfeb17e(0x187),_0xfeb17e(0x179),_0xfeb17e(0x165),'Oktober','November',_0xfeb17e(0x166)],_0x47b217=[_0xfeb17e(0x16a),_0xfeb17e(0x189),_0xfeb17e(0x161),_0xfeb17e(0x16c),_0xfeb17e(0x171),'Jumat','Sabtu'],_0x84ae90=new Date(),_0x459185=_0x84ae90[_0xfeb17e(0x16d)]()-_0x84ae90[_0xfeb17e(0x184)](),_0x2d22b1=_0x459185+0x7,_0x5d54ec=_0x2d22b1+0x7,_0x1a5e1d=new Date(_0x84ae90[_0xfeb17e(0x17b)](_0x2d22b1)),_0x5a5364=new Date(_0x84ae90['setDate'](_0x5d54ec)),_0x3b8e10=_0x47b217[_0x1a5e1d[_0xfeb17e(0x184)]()]+',\x20'+_0x1a5e1d['getDate']()+'\x20'+_0x5955b9[_0x1a5e1d['getMonth']()]+'\x20'+_0x1a5e1d[_0xfeb17e(0x173)](),_0x4a5060=_0x47b217[_0x5a5364[_0xfeb17e(0x184)]()]+',\x20'+_0x5a5364['getDate']()+'\x20'+_0x5955b9[_0x5a5364['getMonth']()]+'\x20'+_0x5a5364[_0xfeb17e(0x173)]();document['querySelectorAll'](_0xfeb17e(0x164))[0x0][_0xfeb17e(0x15e)]=_0x3b8e10,document[_0xfeb17e(0x16b)](_0xfeb17e(0x164))[0x1][_0xfeb17e(0x15e)]=_0x4a5060,ctx[_0xfeb17e(0x175)]='bold\x2015px\x20Arial',ctx['fillStyle']=_0xfeb17e(0x162),ctx['fillText'](_0x3b8e10,0x17c,0xe6),ctx[_0xfeb17e(0x188)](_0x4a5060,0x17c,0x19f);}function generate(){var _0x2ec14c=_0x59465f;canvas['width']=img['naturalWidth'],canvas[_0x2ec14c(0x180)]=img[_0x2ec14c(0x17d)],ctx[_0x2ec14c(0x168)](img,0x0,0x0),generatetanggal(),buattext(0x0,0x2f,0x136),buattext(0x1,0x104,0x136),buattext(0x2,0x1d8,0x136),buattext(0x3,0x2a9,0x136),buattext(0x4,0x2f,0x1ea),buattext(0x5,0x104,0x1ea),buattext(0x6,0x1d8,0x1ea),buattext(0x7,0x2a9,0x1ea);}generatetanggal(),img[_0x59465f(0x15f)]=_0x59465f(0x182);
+</script>
+</body>
+</html>
